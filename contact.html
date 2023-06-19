@@ -5,36 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Contact info</h1>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="menu">
+        <nav>
+            <ul class="navigate">
+            <li class="mbutton"><a href="index.html">Home</a></li>
+            <li class="mbutton"><a href="about.html">About</a></li>
+            <li class="mbutton"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>  
+    
     
     
     <form>
-        <label>Name: 
+    <div class="toprow">
+        <label class="name">Name: 
             <input type="text">
         </label>
-        <br>
-        <label>Email: 
+        
+        <label class="email">Email: 
             <input type="text">
         </label>
-        <br>
+    </div>
 
-        <label>Reason for contact
+        <br>
+    <div class="middlerow">
+        <label class="num">Phone number:
+            <input type="text">
+        </label>
+        <label class="reason">Reason for contact: 
             <select id="contact" name="contact">
                 <option>saying hi</option>
                 <option selected>looking for a contractor</option>
                 <option>interested in an interview</option>
+                <option>other</option>
               </select>
         </label>
+        <label class="other">if other list reason here:
+            <input type="text">
+        </label>
+    </div>
+
         <br>
         <p><label for="form">Coments:</label></p>
         <textarea id="form" name="form" rows="4" cols="50"></textarea>
